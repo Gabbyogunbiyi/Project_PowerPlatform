@@ -1,4 +1,7 @@
-# Inefficiencies in Customer Order
+# Inefficiencies in Customer Order & Inventory Management
+
+# Introduction
+
 
 ## 1. Manual Order Tracking and Entry
 
