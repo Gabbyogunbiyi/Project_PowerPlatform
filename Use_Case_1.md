@@ -1,6 +1,7 @@
 # Inefficiencies in Customer Order & Inventory Management
 
 # Introduction
+Alison Manufacturing Company is struggling with significant inefficiencies in managing customer orders and inventory. The current system relies heavily on spreadsheets, emails, and manual processes, which leads to frequent errors, delays, and a lack of visibility into critical operations. These outdated methods hinder productivity, create inconsistencies, and make it difficult to track real-time data, ultimately affecting customer satisfaction and overall operational efficiency. The company is now exploring Microsoft Power Platform as a solution to automate workflows, centralize data, and streamline processes to overcome these challenges.
 
 
 ## 1. Manual Order Tracking and Entry
