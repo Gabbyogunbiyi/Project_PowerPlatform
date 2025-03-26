@@ -72,7 +72,7 @@ By implementing **Microsoft Power Platform**, Alison Manufacturing will:
 ---
 The **Microsoft Power Platform** provides a robust and flexible suite of tools that can help **Alison Manufacturing Company** overcome its current inefficiencies. From automating workflows to improving data insights and centralizing information, the platform will transform the company's operations, boost productivity, and enhance customer satisfaction. By adopting these solutions, Alison Manufacturing can position itself for growth and success in the increasingly competitive manufacturing industry.
 
-Together, these tools allow you to automate tasks, centralize data, and gain visibility into every part of your operation, driving improvements across the board.
+Together, these tools allow them to automate tasks, centralize data, and gain visibility into every part of there operation, driving improvements across the board.
 
 ---
 
@@ -80,10 +80,10 @@ Together, these tools allow you to automate tasks, centralize data, and gain vis
 
 While there are other solutions on the market, such as traditional ERP systems, Microsoft Power Platform combined with **Dataverse** is unique because it:
 
-- Offers **greater flexibility** and **customization** than standard ERP software, allowing you to tailor solutions to your exact needs.
+- Offers **greater flexibility** and **customization** than standard ERP software, allowing them to tailor solutions to there exact needs.
 - Can be implemented **faster** and at a **lower cost**, with no need for expensive, time-consuming installations.
-- Integrates easily with your **existing systems**, especially if you're already using Microsoft products like Office 365, Dynamics 365, and other Microsoft applications.
-- Ensures that all data across your various applications is synced and consistent, thanks to **Dataverse**, which acts as a unified data layer.
+- Integrates easily with there **existing systems**, especially if they are already using Microsoft products like Office 365, Dynamics 365, and other Microsoft applications.
+- Ensures that all data across there various applications is synced and consistent, thanks to **Dataverse**, which acts as a unified data layer.
 
 ---
 
@@ -92,17 +92,17 @@ While there are other solutions on the market, such as traditional ERP systems, 
 According to industry studies:
 
 - Companies that automate workflows can reduce **operational costs by up to 30%**.
-- By automating inventory management, you can reduce stock wastage and overstocking, saving up to **25% in inventory costs**.
+- By automating inventory management, they can reduce stock wastage and overstocking, saving up to **25% in inventory costs**.
 - Businesses that leverage **real-time data insights** from tools like Power BI experience **20% faster decision-making** and a **15% increase in operational efficiency**.
-- **Dataverse** ensures that all your business data, whether related to orders, inventory, or customer relationships, is unified across platforms, enabling quicker decision-making and reducing costly mistakes.
+- **Dataverse** ensures that all there business data, whether related to orders, inventory, or customer relationships, is unified across platforms, enabling quicker decision-making and reducing costly mistakes.
 
-Given that **44% of your customer orders** and **47% of your inventory costs** are impacted by inefficiencies, the potential for significant improvements is clear.
+Given that **44% of there customer orders** and **47% of there inventory costs** are impacted by inefficiencies, the potential for significant improvements is clear.
 
 ---
 
 ## A Segue from Small Talk Into the Pitch
 
-I know Alison Manufacturing is focused on improving productivity and scaling effectively, but those inefficiencies in your processes are holding you back. The great news is, you don’t have to deal with these challenges any longer. **Microsoft Power Platform**, combined with **Dataverse**, is the right tool to help you turn things around quickly and effectively.
+I know Alison Manufacturing is focused on improving productivity and scaling effectively, but those inefficiencies in there processes are holding them back. The great news is, they don’t have to deal with these challenges any longer. **Microsoft Power Platform**, combined with **Dataverse**, is the right tool to help them turn things around quickly and effectively.
 
 ---
 
@@ -114,10 +114,10 @@ I know Alison Manufacturing is focused on improving productivity and scaling eff
 With **Microsoft Power Platform** and **Dataverse**, these problems can be solved by:
 
 - **Automating workflows** with **Power Automate**, reducing the chance for human error and speeding up the order-to-fulfillment process.
-- **Providing real-time data** through **Power BI**, so your team can instantly access accurate, up-to-date information on inventory levels, order status, and customer interactions.
-- **Customizing your processes** with **Power Apps** to create tailored solutions for order management, ensuring that everything runs smoothly and efficiently.
-- **Providing customer support** with **Power Virtual Agents** to handle inquiries, reducing the burden on your support team and improving response times.
-- **Centralizing your data** with **Dataverse**, ensuring that your entire operation operates on one unified, consistent source of truth, which improves communication and reduces errors.
+- **Providing real-time data** through **Power BI**, so there team can instantly access accurate, up-to-date information on inventory levels, order status, and customer interactions.
+- **Customizing there processes** with **Power Apps** to create tailored solutions for order management, ensuring that everything runs smoothly and efficiently.
+- **Providing customer support** with **Power Virtual Agents** to handle inquiries, reducing the burden on the support team and improving response times.
+- **Centralizing there data** with **Dataverse**, ensuring that the entire operation operates on one unified, consistent source of truth, which improves communication and reduces errors.
 
 ---
 
@@ -129,18 +129,12 @@ By implementing **Microsoft Power Platform** and **Dataverse**, Alison Manufactu
 - **Better Decision Making**: Access to dashboards and reports that provide actionable insights for better decision-making.
 - **Cost Savings**: Reduction in inventory waste and operational overhead by automating and optimizing processes.
 - **Enhanced Customer Satisfaction**: Faster order processing and better communication will increase customer loyalty and satisfaction.
-- **Scalability**: As your business grows, **Power Platform** can easily scale to meet increasing demands, providing ongoing flexibility.
-- **Unified Data Management**: **Dataverse** ensures consistency across all your data, making it easier to manage, share, and make informed decisions without discrepancies.
+- **Scalability**: As the business grows, **Power Platform** can easily scale to meet increasing demands, providing ongoing flexibility.
+- **Unified Data Management**: **Dataverse** ensures consistency across all there data, making it easier to manage, share, and make informed decisions without discrepancies.
 
-- [Click here to view the presentation](https://m365x54021218-my.sharepoint.com/:p:/g/personal/gabriel_ogunbiyi_gabbee_com_ng/EczYTjXYfpdKjqUO2xUKULABDKi85IPPkezQmVADjsN3eg?e=dczVrk
+- [Click here to view the presentation](https://m365x54021218-my.sharepoint.com/:p:/g/personal/gabriel_ogunbiyi_gabbee_com_ng/EczYTjXYfpdKjqUO2xUKULABDKi85IPPkezQmVADjsN3eg?e=dczVrk)
 
 ---
-
-## A Call to Action with Next Steps
-
-Let’s explore how **Microsoft Power Platform** and **Dataverse** can address the inefficiencies at Alison Manufacturing. I’d love to schedule a **personalized demo** to show you how the platform can be tailored to meet your needs and start delivering results right away.
-
-What time works for you to connect for a deeper discussion or demo?
 
 ---
 
