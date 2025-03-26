@@ -132,6 +132,8 @@ By implementing **Microsoft Power Platform** and **Dataverse**, Alison Manufactu
 - **Scalability**: As your business grows, **Power Platform** can easily scale to meet increasing demands, providing ongoing flexibility.
 - **Unified Data Management**: **Dataverse** ensures consistency across all your data, making it easier to manage, share, and make informed decisions without discrepancies.
 
+- [Click here to view the presentation](https://m365x54021218-my.sharepoint.com/:p:/g/personal/gabriel_ogunbiyi_gabbee_com_ng/EczYTjXYfpdKjqUO2xUKULABDKi85IPPkezQmVADjsN3eg?e=dczVrk
+
 ---
 
 ## A Call to Action with Next Steps
