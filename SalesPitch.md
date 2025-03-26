@@ -9,8 +9,6 @@ Alison Manufacturing Company is currently struggling with significant inefficien
 47% of inventory costs being wasted due to poor tracking, overstocking, and delays in replenishment and order fulfillment.
 
 --
-# Microsoft Power Platform for Alison Manufacturing Company
-
 ## Overview of Microsoft Power Platform
 
 The **Microsoft Power Platform** is a suite of low-code/no-code tools designed to help businesses automate processes, gain insights from data, and build custom applications—all without requiring extensive developer resources. The Power Platform suite includes:
@@ -37,8 +35,8 @@ Alison Manufacturing is facing significant inefficiencies in order processing, i
 - **Benefit**: Decision-makers gain the ability to make data-driven decisions quickly, spot inefficiencies in real-time, and adjust processes as needed to improve performance.
 
 ### 2. Power Apps – Custom Applications
-- **Problem**: The company relies on spreadsheets and manual tracking systems that lead to errors, delays, and lack of integration.
-- **Solution**: **Power Apps** allows Alison Manufacturing to create custom applications tailored to specific workflows, like order management, inventory tracking, and procurement. These apps can integrate with existing systems (e.g., CRM, ERP) and provide an intuitive interface for employees to manage orders, update inventory, and access customer data.
+- **Problem**: Alison relies on spreadsheets and manual tracking systems that lead to errors, delays, and lack of integration.
+- **Solution**: **Power Apps** allows Alison Manufacturing to create custom applications tailored to specific workflows, like order management, inventory tracking, and procurement and provide an intuitive interface for employees to manage orders, update inventory, and access customer data.
 - **Benefit**: With Power Apps, Alison Manufacturing can streamline processes, reduce errors, and improve user experience by having centralized, customized tools for specific operational needs.
 
 ### 3. Power Automate – Workflow Automation
