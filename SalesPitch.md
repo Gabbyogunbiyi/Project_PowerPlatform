@@ -11,8 +11,6 @@ Alison Manufacturing Company is currently struggling with significant inefficien
 --
 # Microsoft Power Platform for Alison Manufacturing Company
 
-# Microsoft Power Platform for Alison Manufacturing Company
-
 ## Overview of Microsoft Power Platform
 
 The **Microsoft Power Platform** is a suite of low-code/no-code tools designed to help businesses automate processes, gain insights from data, and build custom applications—all without requiring extensive developer resources. The Power Platform suite includes:
