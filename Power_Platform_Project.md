@@ -141,3 +141,23 @@ The Microsoft Power Platform provides a robust and flexible suite of tools that 
 
 ---
 
+# Addressing Inefficiencies in Order Processing and Inventory Management
+
+To address inefficiencies in order processing and inventory management, creating a well-structured database is essential.
+
+![image](https://github.com/user-attachments/assets/bfd3caef-f3a9-47c4-91e7-3a5af1a3bf4a)
+![image](https://github.com/user-attachments/assets/272f6f1a-ec90-486e-b535-bde0879a0860)
+![image](https://github.com/user-attachments/assets/b02c34bb-ae34-4a64-91ff-47130bc3be0f)
+![image](https://github.com/user-attachments/assets/d86d2d00-616b-4fcb-b9bd-3b336db705d2)
+![image](https://github.com/user-attachments/assets/cff3806d-d1f4-4a38-96da-f9d9ca95be86)
+![image](https://github.com/user-attachments/assets/af9a8ba7-e4ad-4716-a5cc-338dd48729b1)
+
+
+
+
+
+
+
+
+
+
