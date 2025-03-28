@@ -172,6 +172,10 @@ To address inefficiencies in order processing and inventory management, creating
 - A product is supplied by a single supplier, but a supplier can provide multiple products. This is a **one-to-many** relationship.
 - **Relationship**: `SupplierID` in **Products** → `SupplierID` in **Suppliers**
 
+- **One-to-many relationship:** A single record in the parent table (e.g., Customers, Orders, Suppliers) can be associated with multiple records in the child table (e.g., Orders, OrderItems, Products).
+
+**Many-to-one relationship:** Multiple records in the child table (e.g., OrderItems) refer to a single record in the parent table (e.g., Products).
+
 
 
 
