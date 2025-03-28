@@ -176,6 +176,8 @@ To address inefficiencies in order processing and inventory management, creating
 
 **Many-to-one relationship:** Multiple records in the child table (e.g., OrderItems) refer to a single record in the parent table (e.g., Products).
 
+[Click here to view the presentation](https://m365x54021218-my.sharepoint.com/:p:/g/personal/gabriel_ogunbiyi_gabbee_com_ng/EWGL6I9yyllHkCIVqeUpRDEBfkQuFK75PRoDuYfmYbIjBw?e=nCaGsw)
+
 
 
 
