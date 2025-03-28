@@ -152,6 +152,27 @@ To address inefficiencies in order processing and inventory management, creating
 ![image](https://github.com/user-attachments/assets/cff3806d-d1f4-4a38-96da-f9d9ca95be86)
 ![image](https://github.com/user-attachments/assets/af9a8ba7-e4ad-4716-a5cc-338dd48729b1)
 
+---
+
+## Relationships Between Tables
+
+### 1. Customers and Orders
+- A customer can place multiple orders, but each order is associated with only one customer. This is a **one-to-many** relationship.
+- **Relationship**: `CustomerID` in **Orders** → `CustomerID` in **Customers**
+
+### 2. Orders and OrderItems
+- An order can contain multiple items, but each order item is associated with only one order. This is a **one-to-many** relationship.
+- **Relationship**: `OrderID` in **OrderItems** → `OrderID` in **Orders**
+
+### 3. Products and OrderItems
+- A product can appear in multiple order items, and each order item corresponds to one product. This is a **many-to-one** relationship.
+- **Relationship**: `ProductID` in **OrderItems** → `ProductID` in **Products**
+
+### 4. Suppliers and Products
+- A product is supplied by a single supplier, but a supplier can provide multiple products. This is a **one-to-many** relationship.
+- **Relationship**: `SupplierID` in **Products** → `SupplierID` in **Suppliers**
+
+
 
 
 
