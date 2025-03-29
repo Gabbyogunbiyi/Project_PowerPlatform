@@ -159,27 +159,28 @@ To improve the operations of the manufacturing company and address inefficiencie
 
 ---
 
-## Relationships Between Tables
+### Entity Relationships
 
-### 1. Customers and Orders
-- A customer can place multiple orders, but each order is associated with only one customer. This is a **one-to-many** relationship.
-- **Relationship**: `CustomerID` in **Orders** → `CustomerID` in **Customers**
+1. **Customers ↔ Orders**
+   - `CustomerID` in **Orders** creates a **One-to-Many** relationship between **Customers** and **Orders**.
+     - A single customer can place multiple orders.
 
-### 2. Orders and OrderItems
-- An order can contain multiple items, but each order item is associated with only one order. This is a **one-to-many** relationship.
-- **Relationship**: `OrderID` in **OrderItems** → `OrderID` in **Orders**
+2. **Orders ↔ OrderDetails**
+   - `OrderID` in **OrderDetails** creates a **One-to-Many** relationship between **Orders** and **OrderDetails**.
+     - An order can have multiple associated products (via order details).
 
-### 3. Products and OrderItems
-- A product can appear in multiple order items, and each order item corresponds to one product. This is a **many-to-one** relationship.
-- **Relationship**: `ProductID` in **OrderItems** → `ProductID` in **Products**
+3. **OrderDetails ↔ Products**
+   - `ProductID` in **OrderDetails** creates a **Many-to-One** relationship between **OrderDetails** and **Products**.
+     - Multiple order details can reference the same product.
 
-### 4. Suppliers and Products
-- A product is supplied by a single supplier, but a supplier can provide multiple products. This is a **one-to-many** relationship.
-- **Relationship**: `SupplierID` in **Products** → `SupplierID` in **Suppliers**
+4. **Products ↔ Inventory**
+   - `ProductID` in **Inventory** creates a **One-to-One** relationship between **Products** and **Inventory**.
+     - Each product corresponds to a single inventory record.
 
-- **One-to-many relationship:** A single record in the parent table (e.g., Customers, Orders, Suppliers) can be associated with multiple records in the child table (e.g., Orders, OrderItems, Products).
+5. **Products ↔ Suppliers**
+   - `SupplierID` in **Products** creates a **Many-to-One** relationship between **Products** and **Suppliers**.
+     - Multiple products can be provided by a single supplier.
 
-**Many-to-one relationship:** Multiple records in the child table (e.g., OrderItems) refer to a single record in the parent table (e.g., Products).
 
 [Click here to view the presentation](https://m365x54021218-my.sharepoint.com/:p:/g/personal/gabriel_ogunbiyi_gabbee_com_ng/EWGL6I9yyllHkCIVqeUpRDEBfkQuFK75PRoDuYfmYbIjBw?e=nCaGsw)
 
