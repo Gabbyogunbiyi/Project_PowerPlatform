@@ -25,15 +25,6 @@ inventory costs being wasted due to poor tracking, overstocking, and delays in r
 
 The **Microsoft Power Platform** is a suite of low-code/no-code tools designed to help businesses automate processes, gain insights from data, and build custom solution. The Power Platform suite includes:
 
-1. **Power BI**: A business analytics tool that provides interactive data visualizations and business intelligence capabilities. It helps businesses gain insights from their data, track performance, and make informed decisions.
-   
-2. **Power Apps**: A low-code app development platform that allows businesses to create custom applications to solve specific business needs. These apps can be used across devices and help streamline processes like order management, inventory tracking, and customer engagement.
-   
-3. **Power Automate**: A tool for automating workflows and repetitive tasks across different applications. It helps businesses automate processes like approvals, notifications, data entry, and more, improving efficiency and reducing errors.
-   
-4. **Power Virtual Agents**: A platform for building AI-powered chatbots that can engage with customers, provide support, and automate simple tasks. It can be used for customer service automation, internal communications, and more.
-   
-5. **Dataverse**: A centralized data platform that standardizes data storage and management. It ensures consistent, secure, and easily accessible data across the organization, enhancing collaboration and real-time insights.
 
 ---
 
