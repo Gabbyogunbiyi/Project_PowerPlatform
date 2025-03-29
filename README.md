@@ -6,11 +6,13 @@ Alison manufacturing company, is facing inefficiencies in handling customer orde
 
 To resolve these issues, the company is considering Microsoft Power Platform to automate workflows, centralize data, and improve operational efficiency.
 
-Alison Manufacturing Company is currently struggling with significant inefficiencies in its order processing and inventory management. From my research, I understand that the company relies heavily on outdated systems like spreadsheets and emails to manage critical operations. These methods often lead to:
+The Company is currently struggling with significant inefficiencies in its order processing and inventory management. From my research, I understand that the company relies heavily on outdated systems like spreadsheets and emails to manage critical operations. These methods often lead to:
 
 44% of customer orders being delayed or mishandled due to inefficiencies in tracking, communication, and processing.
 
 47% of inventory costs being wasted due to poor tracking, overstocking, and delays in replenishment and order fulfillment.
+
+To resolve these issues, the company is considering Microsoft Power Platform to automate workflows, centralize data, and improve operational efficiency.
 
 --
 ## Overview of Microsoft Power Platform
