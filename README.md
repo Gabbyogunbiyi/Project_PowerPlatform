@@ -12,11 +12,11 @@ To resolve these issues, the company is considering Microsoft Power Platform to 
 With Alison's company plans of moving their system and one of their considerations in Microsoft Power Platform. Based on my experience and expertise in leveraging the Power Platform, I strongly recommend it for the following reasons:
 
 There current system has significant inefficiencies in order processing and inventory management.
-They rely heavily on spreadsheets and emails to handle critical operations. These manual processes often result in:
+They rely heavily on spreadsheets and emails to handle operations. These manual processes often result in:
 
-44% of customer orders being delayed or mishandled due to inefficiencies in tracking, communication, and processing.
+customer orders being delayed or mishandled due to inefficiencies in tracking, communication, and processing.
 
-47% of inventory costs being wasted due to poor tracking, overstocking, and delays in replenishment and order fulfillment.
+inventory costs being wasted due to poor tracking, overstocking, and delays in replenishment and order fulfillment.
 
 
 
