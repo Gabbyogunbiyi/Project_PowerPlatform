@@ -143,7 +143,7 @@ The Microsoft Power Platform provides a robust and flexible suite of tools that 
 
 # Addressing Inefficiencies in Order Processing and Inventory Management
 
-To address inefficiencies in order processing and inventory management, creating a well-structured database is essential.
+To improve the operations of the manufacturing company and address inefficiencies, it is important to build a database that efficiently manages customer orders, inventory, and related operations. Below, I will define the tables, their columns with appropriate data types, and the relationships between these tables. This will help streamline processes and reduce errors.
 
 ![image](https://github.com/user-attachments/assets/bfd3caef-f3a9-47c4-91e7-3a5af1a3bf4a)
 ![image](https://github.com/user-attachments/assets/272f6f1a-ec90-486e-b535-bde0879a0860)
