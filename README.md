@@ -1,5 +1,3 @@
-# Alison Manufacturing Order Processing & Inventory Management Project
-
  # Transforming Order Processing and Inventory Management at Alison Manufacturing with Microsoft Power Platform
 
 # Introduction
