@@ -1,45 +1,85 @@
+# 📌 Dataverse Schema: Alison Manufacturing Order & Inventory Management
 
-# Addressing Inefficiencies in Order Processing and Inventory Management
+## 🏢 Overview
+This repository contains a **Dataverse table schema** to streamline **customer order** and **inventory management** in a manufacturing company. This setup optimizes workflows in **Power Apps**, **Power Automate**, and **Power BI**.
 
-To improve the operations of the manufacturing company and address inefficiencies, it is important to build a database that efficiently manages customer orders, inventory, and related operations. Below, I will define the tables, their columns with appropriate data types, and the relationships between these tables. This will help streamline processes and reduce errors.
+## 🗄️ Tables & Fields
 
-![image](https://github.com/user-attachments/assets/f7cfe636-6902-4db9-9693-bafafb5d8f46)
-![image](https://github.com/user-attachments/assets/c21fe397-5c80-48ba-8344-a2dc055a3238)
-![image](https://github.com/user-attachments/assets/a2c348c2-a1b0-409c-a024-74470e6f6207)
-![image](https://github.com/user-attachments/assets/085c407a-3e59-4697-b257-4c60b922ae19)
-![image](https://github.com/user-attachments/assets/69189221-8bee-477b-ab26-8cf036796804)
-![image](https://github.com/user-attachments/assets/2c90ad99-bdfe-4d84-9f77-54e060647eef)
+### 1️⃣ Customers Table (`crms_Customers`)
+Stores customer details.
+```plaintext
+- Customer ID (Primary Key, AutoNumber)
+- First Name (Text, Required)
+- Last Name (Text, Required)
+- Email (Email, Required, Unique)
+- Phone (Phone)
+- Address (Text)
+- City (Text)
+- State (Text)
+- Zip Code (Text)
+- Created On (DateTime, Auto)
+```
 
+### 2️⃣ Products Table (`crms_Products`)
+Manages inventory.
+```plaintext
+- Product ID (Primary Key, AutoNumber)
+- Product Name (Text, Required)
+- Description (Multiline Text)
+- Price (Currency, Required)
+- Stock Quantity (Whole Number, Required)
+- Reorder Level (Whole Number, Required)
+- Created On (DateTime, Auto)
+```
 
+### 3️⃣ Orders Table (`crms_Orders`)
+Tracks customer purchases.
+```plaintext
+- Order ID (Primary Key, AutoNumber)
+- Customer (Lookup, `crms_Customers`, Required)
+- Order Date (DateTime, Auto)
+- Total Amount (Currency, Calculated)
+- Order Status (Choice: Pending, Processing, Shipped, Delivered, Cancelled)
+- Created On (DateTime, Auto)
+```
 
+### 4️⃣ Order Details Table (`crms_OrderDetails`)
+Handles many-to-many relationships between orders and products.
+```plaintext
+- Order Detail ID (Primary Key, AutoNumber)
+- Order (Lookup, `crms_Orders`, Required)
+- Product (Lookup, `crms_Products`, Required)
+- Quantity (Whole Number, Required)
+- Unit Price (Currency, Required)
+- Subtotal (Currency, Calculated: `Quantity * Unit Price`)
+- Created On (DateTime, Auto)
+```
 
+### 5️⃣ Inventory Transactions Table (`crms_InventoryTransactions`)
+Tracks stock changes.
+```plaintext
+- Transaction ID (Primary Key, AutoNumber)
+- Product (Lookup, `crms_Products`, Required)
+- Transaction Type (Choice: Restock, Sale)
+- Quantity Changed (Whole Number, Required)
+- Transaction Date (DateTime, Auto)
+- Created On (DateTime, Auto)
+```
 
+## 🔗 Relationships
+```plaintext
+1️⃣ Customers ↔ Orders (One-to-Many) → Each customer can place multiple orders.
+2️⃣ Orders ↔ Order Details (One-to-Many) → Each order contains multiple products.
+3️⃣ Products ↔ Order Details (Many-to-Many) → Each product appears in multiple orders.
+4️⃣ Products ↔ Inventory Transactions (One-to-Many) → Each product has stock updates.
+```
 
----
+## 🚀 Features & Benefits
+✅ **Automated Inventory Updates** → Stock adjusts when an order is placed.
+✅ **Reorder Alerts** → Alerts when stock goes below the **Reorder Level**.
+✅ **Real-time Order Tracking** → Status updates (Pending, Shipped, etc.).
+✅ **Power Platform Integration** → Works with **Power Apps** & **Power Automate**.
+✅ **Customer Insights** → Analyze frequent buyers & sales trends.
 
-### Entity Relationships
-
-1. **Customers ↔ Orders**
-   - `CustomerID` in **Orders** creates a **One-to-Many** relationship between **Customers** and **Orders**.
-     - A single customer can place multiple orders.
-
-2. **Orders ↔ OrderDetails**
-   - `OrderID` in **OrderDetails** creates a **One-to-Many** relationship between **Orders** and **OrderDetails**.
-     - An order can have multiple associated products (via order details).
-
-3. **OrderDetails ↔ Products**
-   - `ProductID` in **OrderDetails** creates a **Many-to-One** relationship between **OrderDetails** and **Products**.
-     - Multiple order details can reference the same product.
-
-4. **Products ↔ Inventory**
-   - `ProductID` in **Inventory** creates a **One-to-One** relationship between **Products** and **Inventory**.
-     - Each product corresponds to a single inventory record.
-
-5. **Products ↔ Suppliers**
-   - `SupplierID` in **Products** creates a **Many-to-One** relationship between **Products** and **Suppliers**.
-     - Multiple products can be provided by a single supplier.
-
-
-[Click here to view the presentation](https://m365x54021218-my.sharepoint.com/:p:/g/personal/gabriel_ogunbiyi_gabbee_com_ng/EWGL6I9yyllHkCIVqeUpRDEBfkQuFK75PRoDuYfmYbIjBw?e=nCaGsw)
-
-
+## 📌 Next Steps
+Would you like to add **Suppliers**, **Shipping**, or **Employee Management** tables? 🤔
