@@ -21,13 +21,14 @@ inventory costs being wasted due to poor tracking, overstocking, and delays in r
 
 
 --
-## Overview of Microsoft Power Platform
 
-Microsoft Power Platform provides a comprehensive solution to address the company's current issues and inefficiencies through automation, real-time analytics, data centralization, and data management.
 
 ---
 
 ## How Power Platform Can Help Alison Manufacturing Company
+
+Microsoft Power Platform provides a comprehensive solution to address the company's current issues and inefficiencies through automation, real-time analytics, data centralization, and data management.
+
 
  **Microsoft Power Platform** provides a comprehensive solution to address these inefficiencies through automation, data centralization, and real-time analytics.
 
