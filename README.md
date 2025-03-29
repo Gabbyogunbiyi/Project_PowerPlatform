@@ -23,7 +23,7 @@ inventory costs being wasted due to poor tracking, overstocking, and delays in r
 --
 ## Overview of Microsoft Power Platform
 
-The **Microsoft Power Platform** is a suite of low-code/no-code tools designed to help businesses automate processes, gain insights from data, and build custom applications—all without requiring extensive developer resources. The Power Platform suite includes:
+The **Microsoft Power Platform** is a suite of low-code/no-code tools designed to help businesses automate processes, gain insights from data, and build custom solution. The Power Platform suite includes:
 
 1. **Power BI**: A business analytics tool that provides interactive data visualizations and business intelligence capabilities. It helps businesses gain insights from their data, track performance, and make informed decisions.
    
