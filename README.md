@@ -50,9 +50,9 @@ Microsoft Power Platform provides a comprehensive solution to address the compan
   - Trigger inventory restocking alerts when stock levels fall below a certain threshold.
 - **Benefit**: Automation reduces the time spent on manual tasks, minimizes errors, and improves efficiency, allowing employees to focus on more strategic activities.
 
-### 4. Power Virtual Agents – Customer Support Automation
+### 4. Copilot Studio Agents – Customer Support Automation
 - **Problem**: Customer support and inquiries are often handled manually, leading to delays in response time and inconsistent communication.
-- **Solution**: **Power Virtual Agents** allows Alison Manufacturing to build AI-powered chatbots that can handle common customer queries, provide order status updates, and answer frequently asked questions (FAQs) around inventory or product availability.
+- **Solution**: **Copilot Studio Agents** allows Alison Manufacturing to build AI-powered chatbots that can handle common customer queries, provide order status updates, and answer frequently asked questions (FAQs) around inventory or product availability.
 - **Benefit**: This reduces the workload on customer service teams, improves customer satisfaction by providing immediate responses, and ensures consistent communication across touchpoints.
 
 ### 5. Dataverse – Centralized Data Management
