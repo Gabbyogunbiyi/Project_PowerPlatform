@@ -9,7 +9,7 @@ To resolve these issues, the company is considering Microsoft Power Platform to 
 
 ## Why Microsoft Power Platform is the Right Fit for Alison Manufacturing Company
 
-With Alison's company plans of moving their system and one of their considerations in Microsoft Power Platform. Based on my experience and expertise in leveraging the Power Platform, I strongly recommend it for the following reasons:
+The company’s plan of moving their system and one of their considerations in Microsoft Power Platform. Based on my experience and expertise in leveraging the Power Platform, I strongly recommend it for the following reasons:
 
 There current system has significant inefficiencies in order processing and inventory management.
 They rely heavily on spreadsheets and emails to handle operations. These manual processes often result in:
