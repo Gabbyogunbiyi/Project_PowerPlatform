@@ -204,4 +204,4 @@ By implementing **Microsoft Power Platform** and **Dataverse**, Alison Manufactu
 ## Conclusion
 The Microsoft Power Platform provides a robust and flexible suite of tools that can help Alison Manufacturing Company overcome its current inefficiencies. From automating workflows to improving data insights and centralizing information, the platform will transform the company's operations, boost productivity, and enhance customer satisfaction. By adopting these solutions, Alison Manufacturing can position itself for growth and success in the increasingly competitive manufacturing industry.
 
-- [Click here to view the presentation](https://m365x54021218-my.sharepoint.com/:p:/g/personal/gabriel_ogunbiyi_gabbee_com_ng/EczYTjXYfpdKjqUO2xUKULABDKi85IPPkezQmVADjsN3eg
+- [Click here to view the presentation](https://m365x54021218-my.sharepoint.com/:p:/g/personal/gabriel_ogunbiyi_gabbee_com_ng/EczYTjXYfpdKjqUO2xUKULABDKi85IPPkezQmVADjsN3eg)
