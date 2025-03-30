@@ -36,10 +36,34 @@ Microsoft Power Platform provides a comprehensive solution to address the compan
 - **Solution**: **Power BI** can aggregate data from various sources (sales, inventory, orders) and create interactive dashboards that provide real-time insights. This enables the team to track key performance indicators (KPIs), such as order fulfillment times, inventory levels, and customer satisfaction.
 - **Benefit**: Decision-makers gain the ability to make data-driven decisions quickly, spot inefficiencies in real-time, and adjust processes as needed to improve performance.
 
-### 2. Power Apps – Custom Applications
-- **Problem**: Alison relies on spreadsheets and manual tracking systems that lead to errors, delays, and lack of integration.
-- **Solution**: **Power Apps** allows Alison Manufacturing to create custom applications tailored to specific workflows, like order management, inventory tracking, and procurement and provide an intuitive interface for employees to manage orders, update inventory, and access customer data.
-- **Benefit**: With Power Apps, Alison Manufacturing can streamline processes, reduce errors, and improve user experience by having centralized, customized tools for specific operational needs.
+- ### 2.  Canvas Apps – Inventory Management Application
+
+### Problem  
+Alison Manufacturing relies on **spreadsheets and manual tracking** for inventory management, leading to:  
+- **Inaccurate stock levels** due to human errors in manual data entry  
+- **Delayed inventory updates** causing stock discrepancies  
+- **Lack of integration** with order processing, leading to mismanaged stock adjustments  
+- **Inefficient reordering process**, increasing the risk of production slowdowns  
+
+## ⚙️ Solution – Inventory Management App in Canvas Apps  
+By building an **Inventory Management Application in Canvas Apps**, Alison Manufacturing can:  
+
+**Real-Time Stock Updates** – Automatically sync inventory levels with **Dataverse** whenever stock is added, removed, or transferred.  
+
+ **Error Reduction** – Use **drop-down lists, barcode scanning, and automated calculations** to prevent data entry mistakes.  
+
+**Seamless Order Integration** – Deduct inventory **automatically** when orders are placed to maintain accurate stock records.  
+
+**Reorder Alerts & Tracking** – Trigger **notifications** when stock reaches low levels to ensure timely replenishment.  
+
+**User-Friendly Interface** – Employees can **search, filter, and update inventory** on a mobile-friendly Power Apps interface, improving efficiency over spreadsheets.  
+
+## Benefit  
+With a **Canvas Apps-powered Inventory Management System**, Alison Manufacturing can:  
+**Eliminate manual inefficiencies**  
+**Improve inventory accuracy**  
+**Ensure real-time stock visibility**  
+**Streamline order and stock tracking**  
 
 ### 3. Power Automate – Workflow Automation
 - **Problem**: Manual tasks, such as updating inventory levels, sending notifications, and processing orders, are time-consuming and prone to errors.
@@ -60,25 +84,25 @@ Microsoft Power Platform provides a comprehensive solution to address the compan
 - **Solution**: **Dataverse** acts as a centralized platform for storing and managing all business data in a secure, consistent manner. Data from various sources (order management, inventory, customer databases) can be stored in a unified environment, ensuring seamless integration across apps and workflows.
 - **Benefit**: With centralized and standardized data, teams can collaborate more effectively, and data across systems will always be up-to-date and accurate. This enhances decision-making and operational efficiency.
 
-- # Power Pages – Self-Service Portal  
+- ### 6. Power Pages – Self-Service Portal  
 
-## What is Power Pages?  
+### What is Power Pages?  
 **Power Pages** is a **low-code, secure, and scalable web development platform** within the Microsoft Power Platform. It enables organizations to create **external-facing websites** that integrate with Dataverse, allowing customers, suppliers, and employees to interact with data efficiently.  
 
-## Problem  
+### Problem  
 Alison Manufacturing relies on **emails and spreadsheets** to process customer orders, leading to:  
 - **Delays and errors** in order processing  
 - **Lack of real-time tracking**, causing customer frustration  
 - **Increased manual workload** due to frequent order inquiries  
 
-## Solution  
+### Solution  
 Power Pages provides Alison Manufacturing with a **customer self-service portal**, enabling:  
  **Customers to place and track orders** in real-time  
  **Automated status updates** (e.g., Pending, Processing, Shipped)  
  **Notifications for order confirmations and shipments**  
  **Seamless integration with Dataverse** for up-to-date order information  
 
-##  Benefit  
+### Benefit  
 With Power Pages, Alison Manufacturing can:  
 **Reduce manual processing errors**  
 **Speed up order fulfillment**  
