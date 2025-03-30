@@ -39,7 +39,7 @@ Microsoft Power Platform provides a comprehensive solution to address the compan
 - ### 2.  Canvas Apps – Inventory Management Application
 
 ### Problem  
-Alison Manufacturing relies on **spreadsheets and manual tracking** for inventory management, leading to:  
+They rely on **spreadsheets and manual tracking** for inventory management, leading to:  
 - **Inaccurate stock levels** due to human errors in manual data entry  
 - **Delayed inventory updates** causing stock discrepancies  
 - **Lack of integration** with order processing, leading to mismanaged stock adjustments  
