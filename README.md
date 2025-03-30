@@ -60,6 +60,34 @@ Microsoft Power Platform provides a comprehensive solution to address the compan
 - **Solution**: **Dataverse** acts as a centralized platform for storing and managing all business data in a secure, consistent manner. Data from various sources (order management, inventory, customer databases) can be stored in a unified environment, ensuring seamless integration across apps and workflows.
 - **Benefit**: With centralized and standardized data, teams can collaborate more effectively, and data across systems will always be up-to-date and accurate. This enhances decision-making and operational efficiency.
 
+- # Power Pages – Self-Service Portal  
+
+## What is Power Pages?  
+**Power Pages** is a **low-code, secure, and scalable web development platform** within the Microsoft Power Platform. It enables organizations to create **external-facing websites** that integrate with Dataverse, allowing customers, suppliers, and employees to interact with data efficiently.  
+
+## Problem  
+Alison Manufacturing relies on **emails and spreadsheets** to process customer orders, leading to:  
+- **Delays and errors** in order processing  
+- **Lack of real-time tracking**, causing customer frustration  
+- **Increased manual workload** due to frequent order inquiries  
+
+## Solution  
+Power Pages provides Alison Manufacturing with a **customer self-service portal**, enabling:  
+ **Customers to place and track orders** in real-time  
+ **Automated status updates** (e.g., Pending, Processing, Shipped)  
+ **Notifications for order confirmations and shipments**  
+ **Seamless integration with Dataverse** for up-to-date order information  
+
+##  Benefit  
+With Power Pages, Alison Manufacturing can:  
+**Reduce manual processing errors**  
+**Speed up order fulfillment**  
+**Enhance customer experience with real-time tracking**  
+**Minimize support inquiries through self-service access**  
+
+By implementing **Power Pages**, Alison Manufacturing improves efficiency, **streamlines order management**, and ensures **higher customer satisfaction**.
+
+
 ---
 
 ## Overall Impact of Power Platform on Alison Manufacturing
