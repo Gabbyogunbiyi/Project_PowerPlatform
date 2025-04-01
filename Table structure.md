@@ -1,85 +1,114 @@
 # 📌 Dataverse Schema: Alison Manufacturing Order & Inventory Management
 
-## 🏢 Overview
-This repository contains a **Dataverse table schema** to streamline **customer order** and **inventory management** in a manufacturing company. This setup optimizes workflows in **Power Apps**, **Power Automate**, and **Power BI**.
+## 1. **Customer Table**
+This table stores customer information.
 
-## 🗄️ Tables & Fields
+| Column Name      | Data Type   | Description                             |
+|------------------|-------------|-----------------------------------------|
+| customer_id      | INT         | Primary Key, Unique ID for the customer |
+| name             | VARCHAR(100) | Customer's full name                   |
+| address          | TEXT        | Customer's address                     |
+| phone            | VARCHAR(15) | Customer's phone number                |
+| email            | VARCHAR(100) | Customer's email address               |
+| contact_person   | VARCHAR(100) | Primary contact at the customer site   |
+| created_at       | TIMESTAMP   | Date and time when the customer was added |
+| updated_at       | TIMESTAMP   | Date and time when customer information was last updated |
 
-### 1️⃣ Customers Table (`crms_Customers`)
-Stores customer details.
-```plaintext
-- Customer ID (Primary Key, AutoNumber)
-- First Name (Text, Required)
-- Last Name (Text, Required)
-- Email (Email, Required, Unique)
-- Phone (Phone)
-- Address (Text)
-- City (Text)
-- State (Text)
-- Zip Code (Text)
-- Created On (DateTime, Auto)
-```
+---
 
-### 2️⃣ Products Table (`crms_Products`)
-Manages inventory.
-```plaintext
-- Product ID (Primary Key, AutoNumber)
-- Product Name (Text, Required)
-- Description (Multiline Text)
-- Price (Currency, Required)
-- Stock Quantity (Whole Number, Required)
-- Reorder Level (Whole Number, Required)
-- Created On (DateTime, Auto)
-```
+## 2. **Product Table**
+This table stores product information that will be sold to customers.
 
-### 3️⃣ Orders Table (`crms_Orders`)
-Tracks customer purchases.
-```plaintext
-- Order ID (Primary Key, AutoNumber)
-- Customer (Lookup, `crms_Customers`, Required)
-- Order Date (DateTime, Auto)
-- Total Amount (Currency, Calculated)
-- Order Status (Choice: Pending, Processing, Shipped, Delivered, Cancelled)
-- Created On (DateTime, Auto)
-```
+| Column Name      | Data Type   | Description                            |
+|------------------|-------------|----------------------------------------|
+| product_id       | INT         | Primary Key, Unique ID for the product |
+| product_name     | VARCHAR(255) | Name of the product                   |
+| description      | TEXT        | Description of the product            |
+| unit_price       | DECIMAL(10, 2) | Price of one unit of the product      |
+| stock_quantity   | INT         | Quantity of the product in stock      |
+| created_at       | TIMESTAMP   | Date and time the product was added   |
+| updated_at       | TIMESTAMP   | Date and time the product was last updated |
 
-### 4️⃣ Order Details Table (`crms_OrderDetails`)
-Handles many-to-many relationships between orders and products.
-```plaintext
-- Order Detail ID (Primary Key, AutoNumber)
-- Order (Lookup, `crms_Orders`, Required)
-- Product (Lookup, `crms_Products`, Required)
-- Quantity (Whole Number, Required)
-- Unit Price (Currency, Required)
-- Subtotal (Currency, Calculated: `Quantity * Unit Price`)
-- Created On (DateTime, Auto)
-```
+---
 
-### 5️⃣ Inventory Transactions Table (`crms_InventoryTransactions`)
-Tracks stock changes.
-```plaintext
-- Transaction ID (Primary Key, AutoNumber)
-- Product (Lookup, `crms_Products`, Required)
-- Transaction Type (Choice: Restock, Sale)
-- Quantity Changed (Whole Number, Required)
-- Transaction Date (DateTime, Auto)
-- Created On (DateTime, Auto)
-```
+## 3. **Order Table**
+This table stores customer orders.
 
-## 🔗 Relationships
-```plaintext
-1️⃣ Customers ↔ Orders (One-to-Many) → Each customer can place multiple orders.
-2️⃣ Orders ↔ Order Details (One-to-Many) → Each order contains multiple products.
-3️⃣ Products ↔ Order Details (Many-to-Many) → Each product appears in multiple orders.
-4️⃣ Products ↔ Inventory Transactions (One-to-Many) → Each product has stock updates.
-```
+| Column Name      | Data Type   | Description                                 |
+|------------------|-------------|---------------------------------------------|
+| order_id         | INT         | Primary Key, Unique ID for the order        |
+| customer_id      | INT         | Foreign Key to `Customer` table             |
+| order_date       | TIMESTAMP   | Date and time when the order was placed     |
+| total_amount     | DECIMAL(10, 2) | Total amount of the order                  |
+| order_status     | VARCHAR(50) | Status of the order (Pending, Shipped, Delivered, etc.) |
+| payment_status   | VARCHAR(50) | Payment status (Paid, Pending, etc.)        |
+| shipment_status  | VARCHAR(50) | Shipment status (In Transit, Delivered, etc.) |
+| delivery_date    | TIMESTAMP   | Expected delivery date                     |
 
-## 🚀 Features & Benefits
-✅ **Automated Inventory Updates** → Stock adjusts when an order is placed.
-✅ **Reorder Alerts** → Alerts when stock goes below the **Reorder Level**.
-✅ **Real-time Order Tracking** → Status updates (Pending, Shipped, etc.).
-✅ **Power Platform Integration** → Works with **Power Apps** & **Power Automate**.
-✅ **Customer Insights** → Analyze frequent buyers & sales trends.
+---
 
-## 📌 Next Steps
-Would you like to add **Suppliers**, **Shipping**, or **Employee Management** tables? 🤔
+## 4. **Order Item Table**
+This table stores details of the items ordered in a particular order. A single order can have multiple products.
+
+| Column Name      | Data Type   | Description                                 |
+|------------------|-------------|---------------------------------------------|
+| order_item_id    | INT         | Primary Key, Unique ID for the order item   |
+| order_id         | INT         | Foreign Key to `Order` table                |
+| product_id       | INT         | Foreign Key to `Product` table              |
+| quantity         | INT         | Quantity of the product ordered            |
+| unit_price       | DECIMAL(10, 2) | Price of one unit of the product at time of order |
+| total_price      | DECIMAL(10, 2) | Total price (quantity * unit_price)        |
+
+---
+
+## 5. **Inventory Movement Table**
+This table stores the movements of inventory, such as restocks and sales.
+
+| Column Name      | Data Type   | Description                                 |
+|------------------|-------------|---------------------------------------------|
+| inventory_id     | INT         | Primary Key, Unique ID for inventory movement |
+| product_id       | INT         | Foreign Key to `Product` table              |
+| quantity_in      | INT         | Quantity added to inventory (positive value) |
+| quantity_out     | INT         | Quantity removed from inventory (negative value) |
+| movement_type    | VARCHAR(50) | Type of movement (Restock, Sale, Return)   |
+| date             | TIMESTAMP   | Date and time of inventory movement        |
+
+---
+
+## 6. **Employee Table (Optional)**
+This table stores information about employees who are involved in managing orders and inventory.
+
+| Column Name      | Data Type   | Description                             |
+|------------------|-------------|-----------------------------------------|
+| employee_id      | INT         | Primary Key, Unique ID for the employee |
+| name             | VARCHAR(100) | Full name of the employee              |
+| role             | VARCHAR(50)  | Role of the employee (Sales, Warehouse, etc.) |
+| email            | VARCHAR(100) | Employee's email address               |
+| phone            | VARCHAR(15) | Employee's phone number                |
+| created_at       | TIMESTAMP   | Date and time the employee was added   |
+
+---
+
+## 7. **Shipment Table**
+This table stores details about shipments for customer orders.
+
+| Column Name      | Data Type   | Description                                 |
+|------------------|-------------|---------------------------------------------|
+| shipment_id      | INT         | Primary Key, Unique ID for the shipment     |
+| order_id         | INT         | Foreign Key to `Order` table                |
+| shipment_date    | TIMESTAMP   | Date the order was shipped                  |
+| shipment_method  | VARCHAR(50) | Method of shipment (Courier, Local Delivery, etc.) |
+| tracking_number  | VARCHAR(50) | Shipment tracking number                   |
+
+---
+
+## 8. **Payment Table (Optional)**
+This table stores payment information related to customer orders.
+
+| Column Name      | Data Type   | Description                                |
+|------------------|-------------|--------------------------------------------|
+| payment_id       | INT         | Primary Key, Unique ID for the payment     |
+| order_id         | INT         | Foreign Key to `Order` table               |
+| payment_date     | TIMESTAMP   | Date when the payment was made             |
+| payment_method   | VARCHAR(50) | Method of payment (Credit Card, Bank Transfer, etc.) |
+| payment_amount   | DECIMAL(10, 2) | Amount paid                             |
