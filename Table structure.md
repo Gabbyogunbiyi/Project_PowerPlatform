@@ -1,5 +1,17 @@
 # 📌 Dataverse Schema: Alison Manufacturing Order & Inventory Management
 
+# How the ERD and Tables in Dataverse Help Alison Manufacturing
+
+The **ERD** and tables in **Dataverse** provide Alison Manufacturing with a structured and automated solution to manage their orders and inventory. By centralizing data, automating processes, and improving visibility, they can eliminate inefficiencies, reduce errors, and ensure that their operations are streamlined. 
+
+This will ultimately lead to:
+- **Enhanced customer satisfaction** through faster processing and accurate order tracking.
+- **Better inventory management** with real-time stock updates, reducing stockouts and overstocking.
+- **More informed decision-making** with data-driven insights from centralized tables and reports.
+
+These improvements will position the company for future growth, ensuring that they can scale their operations efficiently without compromising performance or customer experience.
+
+
 ## 1. **Customer Table**
 This table stores customer information.
 
