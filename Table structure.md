@@ -145,5 +145,9 @@ This table stores employee in charge of order approval and inventory.
 
 - **Employees → Orders**: Many **Orders** can be processed by one **Employee**.
   - **Employees** (EmployeeID) → **Orders** (EmployeeID)
+ 
+  - ## Conclusion
+
+The **ERD and tables in Dataverse** provide Alison Manufacturing with a structured and automated solution to manage their orders and inventory. By centralizing data, automating processes, and improving visibility, they can eliminate inefficiencies, reduce errors, and ensure that their operations are streamlined. This will ultimately lead to enhanced customer satisfaction, better inventory management, and more informed decision-making, all while positioning the company for future growth.
 
 
