@@ -2,7 +2,16 @@
 
 # How the ERD and Tables in Dataverse Help Alison Manufacturing
 
-The **ERD** and tables in **Dataverse** provide Alison Manufacturing with a structured and automated solution to manage their orders and inventory. By centralizing data, automating processes, and improving visibility, they can eliminate inefficiencies, reduce errors, and ensure that their operations are streamlined. 
+# Introduction
+
+Alison Manufacturing, a mid-sized company, is facing significant inefficiencies in their current order processing and inventory management systems. The reliance on manual tracking, spreadsheets, and email communications has led to errors, delays, and a lack of visibility across operations. These challenges are hampering the company's ability to scale efficiently, deliver high-quality customer service, and maintain accurate inventory levels.
+
+To address these issues, the company is considering a solution using Microsoft Dataverse, which will provide a centralized, automated approach to manage orders, inventory, and customer interactions. By adopting a structured database system, Alison Manufacturing aims to streamline operations, reduce errors, and enhance decision-making across departments.
+
+In this document, we will explore how the **Entity Relationship Diagram (ERD)** and the associated tables in **Dataverse** will help solve the current inefficiencies, improve operational workflows, and position the company for future growth.
+
+
+The **ERD** and tables in **Dataverse** provide them with a structured and automated solution to manage their orders and inventory. By centralizing data, automating processes, and improving visibility, they can eliminate inefficiencies, reduce errors, and ensure that their operations are streamlined. 
 
 This will ultimately lead to:
 - **Enhanced customer satisfaction** through faster processing and accurate order tracking.
