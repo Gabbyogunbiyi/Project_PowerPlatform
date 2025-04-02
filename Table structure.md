@@ -104,3 +104,25 @@ This table stores employee in charge of order approval and inventory.
 
 ---
 
+- **Customers → Orders**: One **Customer** can place many **Orders**.
+  - **Customers** (CustomerID) → **Orders** (CustomerID)
+
+- **Orders → Order Items**: One **Order** can have many **Order Items**.
+  - **Orders** (OrderID) → **Order Items** (OrderID)
+
+- **Order Items → Products**: Many **Order Items** can refer to one **Product**.
+  - **Order Items** (ProductID) → **Products** (ProductID)
+
+- **Orders → Payments**: One **Order** may have one or multiple **Payments**.
+  - **Orders** (OrderID) → **Payments** (OrderID)
+
+- **Orders → Shippers**: Many **Orders** can be shipped by one **Shipper**.
+  - **Orders** (ShipperID) → **Shippers** (ShipperID)
+
+- **Products → Inventory**: Each **Product** has exactly one corresponding **Inventory** record.
+  - **Products** (ProductID) → **Inventory** (ProductID)
+
+- **Employees → Orders**: Many **Orders** can be processed by one **Employee**.
+  - **Employees** (EmployeeID) → **Orders** (EmployeeID)
+
+
