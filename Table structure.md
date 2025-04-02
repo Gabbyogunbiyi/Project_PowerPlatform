@@ -3,112 +3,104 @@
 ## 1. **Customer Table**
 This table stores customer information.
 
-| Column Name      | Data Type   | Description                             |
-|------------------|-------------|-----------------------------------------|
-| customer_id      | INT         | Primary Key, Unique ID for the customer |
-| name             | VARCHAR(100) | Customer's full name                   |
-| address          | TEXT        | Customer's address                     |
-| phone            | VARCHAR(15) | Customer's phone number                |
-| email            | VARCHAR(100) | Customer's email address               |
-| contact_person   | VARCHAR(100) | Primary contact at the customer site   |
-| created_at       | TIMESTAMP   | Date and time when the customer was added |
-| updated_at       | TIMESTAMP   | Date and time when customer information was last updated |
+| Column Name     | Data Type     | Description                          |
+|-----------------|---------------|--------------------------------------|
+| CustomerID      | INT (PK)      | Unique identifier for each customer |
+| FirstName       | VARCHAR(255)  | Customer's first name               |
+| LastName        | VARCHAR(255)  | Customer's last name                |
+| Email           | VARCHAR(255)  | Customer's email address            |
+| Phone           | VARCHAR(15)   | Customer's phone number             |
 
 ---
 
-## 2. **Product Table**
-This table stores product information that will be sold to customers.
-
-| Column Name      | Data Type   | Description                            |
-|------------------|-------------|----------------------------------------|
-| product_id       | INT         | Primary Key, Unique ID for the product |
-| product_name     | VARCHAR(255) | Name of the product                   |
-| description      | TEXT        | Description of the product            |
-| unit_price       | DECIMAL(10, 2) | Price of one unit of the product      |
-| stock_quantity   | INT         | Quantity of the product in stock      |
-| created_at       | TIMESTAMP   | Date and time the product was added   |
-| updated_at       | TIMESTAMP   | Date and time the product was last updated |
-
----
-
-## 3. **Order Table**
+## 2. **Order Table**
 This table stores customer orders.
 
-| Column Name      | Data Type   | Description                                 |
-|------------------|-------------|---------------------------------------------|
-| order_id         | INT         | Primary Key, Unique ID for the order        |
-| customer_id      | INT         | Foreign Key to `Customer` table             |
-| order_date       | TIMESTAMP   | Date and time when the order was placed     |
-| total_amount     | DECIMAL(10, 2) | Total amount of the order                  |
-| order_status     | VARCHAR(50) | Status of the order (Pending, Shipped, Delivered, etc.) |
-| payment_status   | VARCHAR(50) | Payment status (Paid, Pending, etc.)        |
-| shipment_status  | VARCHAR(50) | Shipment status (In Transit, Delivered, etc.) |
-| delivery_date    | TIMESTAMP   | Expected delivery date                     |
+| Column Name     | Data Type     | Description                             |
+|-----------------|---------------|-----------------------------------------|
+| OrderID         | INT (PK)      | Unique identifier for each order       |
+| CustomerID      | INT (FK)      | Foreign key referencing Customers      |
+| OrderDate       | DATETIME      | Date when the order was placed         |
+| Status          | VARCHAR(50)   | Status of the order (e.g., Pending)     |
+| ShippingAddress | VARCHAR(255)  | Shipping address for the order         |
+| PaymentStatus   | VARCHAR(50)   | Payment status (e.g., Paid, Pending)   |
+| TotalAmount     | DECIMAL(10, 2)| Total amount for the order             |
+
 
 ---
 
-## 4. **Order Item Table**
-This table stores details of the items ordered in a particular order. A single order can have multiple products.
+## 3. **Order Item Table**
+This table list out all the individual items that have been ordered. It provides information about which ordereach item belongs to.
 
-| Column Name      | Data Type   | Description                                 |
-|------------------|-------------|---------------------------------------------|
-| order_item_id    | INT         | Primary Key, Unique ID for the order item   |
-| order_id         | INT         | Foreign Key to `Order` table                |
-| product_id       | INT         | Foreign Key to `Product` table              |
-| quantity         | INT         | Quantity of the product ordered            |
-| unit_price       | DECIMAL(10, 2) | Price of one unit of the product at time of order |
-| total_price      | DECIMAL(10, 2) | Total price (quantity * unit_price)        |
+| Column Name     | Data Type     | Description                             |
+|-----------------|---------------|-----------------------------------------|
+| OrderItemID     | INT (PK)      | Unique identifier for each order item  |
+| OrderID         | INT (FK)      | Foreign key referencing Orders         |
+| ProductID       | INT (FK)      | Foreign key referencing Products       |
+| Quantity        | INT           | Quantity of the product in the order   |
+| PriceAtTime     | DECIMAL(10, 2)| Price of the product at the time of order |
+| TotalAmount     | DECIMAL(10, 2)| Total amount for the item in the order |
 
----
-
-## 5. **Inventory Movement Table**
-This table stores the movements of inventory, such as restocks and sales.
-
-| Column Name      | Data Type   | Description                                 |
-|------------------|-------------|---------------------------------------------|
-| inventory_id     | INT         | Primary Key, Unique ID for inventory movement |
-| product_id       | INT         | Foreign Key to `Product` table              |
-| quantity_in      | INT         | Quantity added to inventory (positive value) |
-| quantity_out     | INT         | Quantity removed from inventory (negative value) |
-| movement_type    | VARCHAR(50) | Type of movement (Restock, Sale, Return)   |
-| date             | TIMESTAMP   | Date and time of inventory movement        |
 
 ---
 
-## 6. **Employee Table (Optional)**
-This table stores information about employees who are involved in managing orders and inventory.
+## 4. **Product Table**
+It stores key information about the product.
 
-| Column Name      | Data Type   | Description                             |
-|------------------|-------------|-----------------------------------------|
-| employee_id      | INT         | Primary Key, Unique ID for the employee |
-| name             | VARCHAR(100) | Full name of the employee              |
-| role             | VARCHAR(50)  | Role of the employee (Sales, Warehouse, etc.) |
-| email            | VARCHAR(100) | Employee's email address               |
-| phone            | VARCHAR(15) | Employee's phone number                |
-| created_at       | TIMESTAMP   | Date and time the employee was added   |
-
----
-
-## 7. **Shipment Table**
-This table stores details about shipments for customer orders.
-
-| Column Name      | Data Type   | Description                                 |
-|------------------|-------------|---------------------------------------------|
-| shipment_id      | INT         | Primary Key, Unique ID for the shipment     |
-| order_id         | INT         | Foreign Key to `Order` table                |
-| shipment_date    | TIMESTAMP   | Date the order was shipped                  |
-| shipment_method  | VARCHAR(50) | Method of shipment (Courier, Local Delivery, etc.) |
-| tracking_number  | VARCHAR(50) | Shipment tracking number                   |
+| Column Name     | Data Type     | Description                             |
+|-----------------|---------------|-----------------------------------------|
+| ProductID       | INT (PK)      | Unique identifier for each product     |
+| ProductName     | VARCHAR(255)  | Name of the product                    |
+| ProductDescription | TEXT       | Description of the product             |
+| Category        | VARCHAR(100)  | Category the product belongs to        |
+| Price           | DECIMAL(10, 2)| Current price of the product           |
+| StockQuantity   | INT           | Quantity of product in stock           |
+| ReorderLevel    | INT           | Reorder level to trigger restocking    |
+| SupplierID      | INT (FK)      | Foreign key referencing Suppliers      |
 
 ---
 
-## 8. **Payment Table (Optional)**
-This table stores payment information related to customer orders.
+## 5. **Inventory Table**
+An organized summary of every product Alison has in stock.
 
-| Column Name      | Data Type   | Description                                |
-|------------------|-------------|--------------------------------------------|
-| payment_id       | INT         | Primary Key, Unique ID for the payment     |
-| order_id         | INT         | Foreign Key to `Order` table               |
-| payment_date     | TIMESTAMP   | Date when the payment was made             |
-| payment_method   | VARCHAR(50) | Method of payment (Credit Card, Bank Transfer, etc.) |
-| payment_amount   | DECIMAL(10, 2) | Amount paid                             |
+| Column Name     | Data Type     | Description                             |
+|-----------------|---------------|-----------------------------------------|
+| InventoryID     | INT (PK)      | Unique identifier for the inventory record |
+| ProductID       | INT (FK)      | Foreign key referencing Products       |
+| StockQuantity   | INT           | Current stock quantity in the warehouse|
+| WarehouseLocation | VARCHAR(100) | Location of the product in the warehouse|
+| LastRestocked   | DATETIME      | Date when the product was last restocked |
+
+
+---
+
+## 6. **Payment Table**
+Monetary details of all payments towards each order.
+
+| Column Name     | Data Type     | Description                             |
+|-----------------|---------------|-----------------------------------------|
+| PaymentID       | INT (PK)      | Unique identifier for each payment     |
+| OrderID         | INT (FK)      | Foreign key referencing Orders         |
+| PaymentDate     | DATETIME      | Date when the payment was made         |
+| PaymentAmount   | DECIMAL(10, 2)| Total payment amount                   |
+| PaymentMethod   | VARCHAR(50)   | Method of payment (e.g., Credit Card)  |
+| PaymentStatus   | VARCHAR(50)   | Status of payment (e.g., Completed)    |
+
+
+---
+
+## 7. **Employee Table**
+This table stores employee in charge of order approval and inventory.
+
+| Column Name     | Data Type     | Description                             |
+|-----------------|---------------|-----------------------------------------|
+| EmployeeID      | INT (PK)      | Unique identifier for each employee    |
+| FirstName       | VARCHAR(255)  | Employee's first name                  |
+| LastName        | VARCHAR(255)  | Employee's last name                   |
+| Email           | VARCHAR(255)  | Employee's email address               |
+| Phone           | VARCHAR(15)   | Employee's phone number                |
+| Role            | VARCHAR(100)  | Job role (e.g., Sales, Manager, etc.)  |
+
+
+---
+
