@@ -146,7 +146,8 @@ This table stores employee in charge of order approval and inventory.
 - **Employees → Orders**: Many **Orders** can be processed by one **Employee**.
   - **Employees** (EmployeeID) → **Orders** (EmployeeID)
  
-   ![image](https://github.com/user-attachments/assets/acbdecd0-2e99-4084-a9c0-f9d0eb6e6cd9)
+  ![image](https://github.com/user-attachments/assets/2bc5d506-607e-41a0-9117-b505f1ba7a50)
+
   
    [Click here to view the presentation]( https://m365x54021218-my.sharepoint.com/:p:/g/personal/gabriel_ogunbiyi_gabbee_com_ng/EWGL6I9yyllHkCIVqeUpRDEBfkQuFK75PRoDuYfmYbIjBw?e=lPqO2x)
     
